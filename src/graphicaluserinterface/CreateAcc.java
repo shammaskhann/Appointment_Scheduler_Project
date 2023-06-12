@@ -9,7 +9,6 @@ import javax.swing.JFrame;
  */
 public class CreateAcc extends javax.swing.JFrame {
     
-    private Object textField;
     public CreateAcc() 
     {
         initComponents();
@@ -248,7 +247,7 @@ public class CreateAcc extends javax.swing.JFrame {
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
         LogPateint logP=new LogPateint();
-        logP.show();
+        logP.setVisible(true);;
         dispose();
         
     }//GEN-LAST:event_btnBackActionPerformed
