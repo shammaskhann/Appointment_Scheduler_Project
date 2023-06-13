@@ -37,6 +37,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         txtPassword = new javax.swing.JPasswordField();
         btnCreateNewAccount = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,13 +47,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         lblCreateNewDoctorAccount.setFont(new java.awt.Font("sansserif", 3, 48)); // NOI18N
         lblCreateNewDoctorAccount.setText("Create New Doctor Account");
         jPanel1.add(lblCreateNewDoctorAccount);
-        lblCreateNewDoctorAccount.setBounds(286, 17, 635, 62);
+        lblCreateNewDoctorAccount.setBounds(460, 40, 636, 62);
 
         lblEmail.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblEmail.setForeground(new java.awt.Color(255, 255, 255));
         lblEmail.setText("Enter Email");
         jPanel1.add(lblEmail);
-        lblEmail.setBounds(64, 130, 140, 32);
+        lblEmail.setBounds(240, 170, 140, 32);
 
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,13 +61,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtEmail);
-        txtEmail.setBounds(300, 118, 268, 44);
+        txtEmail.setBounds(600, 160, 268, 44);
 
         lblUsername.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblUsername.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername.setText("Enter UserName");
         jPanel1.add(lblUsername);
-        lblUsername.setBounds(64, 233, 200, 32);
+        lblUsername.setBounds(230, 270, 200, 32);
 
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,13 +75,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtUsername);
-        txtUsername.setBounds(300, 221, 268, 44);
+        txtUsername.setBounds(600, 260, 268, 44);
 
         lblDoctorName.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblDoctorName.setForeground(new java.awt.Color(255, 255, 255));
         lblDoctorName.setText("Enter Doctor Name");
         jPanel1.add(lblDoctorName);
-        lblDoctorName.setBounds(64, 346, 230, 32);
+        lblDoctorName.setBounds(230, 390, 230, 32);
 
         txtDoctorName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,13 +89,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtDoctorName);
-        txtDoctorName.setBounds(300, 334, 268, 44);
+        txtDoctorName.setBounds(600, 380, 268, 44);
 
         lblSelectSpecialization.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblSelectSpecialization.setForeground(new java.awt.Color(255, 255, 255));
         lblSelectSpecialization.setText("Select Specialization");
         jPanel1.add(lblSelectSpecialization);
-        lblSelectSpecialization.setBounds(683, 252, 237, 32);
+        lblSelectSpecialization.setBounds(1050, 290, 237, 32);
 
         cmbSpecialization.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cmbSpecialization.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "[--SELECT--]", "Cardiologist", "Dermatologist", "Gastroenterologist", "Neurologist", "Oncologist", "Ophthalmologist", "Orthopedic Surgeon", "Pediatrician", "Psychiatrist", "Radiologist", "Urologist", "Obstetrician/Gynecologist", "Endocrinologist", "Nephrologist", "Pulmonologist", "Allergist/Immunologist", "Rheumatologist", "Anesthesiologist", "Plastic Surgeon", "Emergency Medicine Physician", "General Surgeon", "Family Medicine Physician", "Otolaryngologist (Ear, Nose, and Throat Specialist)", "Hematologist", "Infectious Disease Specialist", "Neonatologist", "Physical Medicine and Rehabilitation Specialist", "Vascular Surgeon", "Oculoplastic Surgeon", "Pain Management Specialist" }));
@@ -104,13 +105,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(cmbSpecialization);
-        cmbSpecialization.setBounds(683, 343, 200, 50);
+        cmbSpecialization.setBounds(1070, 380, 200, 50);
 
         lblSelectTime.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblSelectTime.setForeground(new java.awt.Color(255, 255, 255));
         lblSelectTime.setText("Select Time");
         jPanel1.add(lblSelectTime);
-        lblSelectTime.setBounds(64, 585, 150, 32);
+        lblSelectTime.setBounds(240, 600, 150, 32);
 
         cmbSelectTime.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         cmbSelectTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "[-Select Time-]", "12:00 pm - 2:00 pm", "2:00 pm - 4:00 pm", "4:00 pm - 6:00 pm", "6:00 pm - 8:00 pm", "8:00 pm - 10:00 pm", " " }));
@@ -120,13 +121,13 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(cmbSelectTime);
-        cmbSelectTime.setBounds(300, 567, 268, 50);
+        cmbSelectTime.setBounds(600, 580, 268, 50);
 
         lblPassword.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("Enter Password");
         jPanel1.add(lblPassword);
-        lblPassword.setBounds(64, 480, 190, 32);
+        lblPassword.setBounds(240, 490, 190, 32);
 
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,10 +135,10 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtPassword);
-        txtPassword.setBounds(300, 467, 268, 45);
+        txtPassword.setBounds(600, 480, 268, 45);
 
-        btnCreateNewAccount.setBackground(new java.awt.Color(0, 0, 102));
-        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnCreateNewAccount.setBackground(new java.awt.Color(0, 51, 102));
+        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnCreateNewAccount.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateNewAccount.setText("Create New Account");
         btnCreateNewAccount.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +147,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnCreateNewAccount);
-        btnCreateNewAccount.setBounds(430, 700, 466, 45);
+        btnCreateNewAccount.setBounds(600, 700, 320, 45);
 
         btnBack.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnBack.setText("Back");
@@ -157,6 +158,22 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         });
         jPanel1.add(btnBack);
         btnBack.setBounds(50, 30, 90, 23);
+
+        jPanel2.setBackground(new java.awt.Color(0, 51, 102,100));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1140, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(190, 50, 1140, 50);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/healthcare-and-medical-background-with-cardiogram-line-free-vector_1.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
@@ -247,8 +264,8 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
-        LogPateint lp=new LogPateint();
-        lp.show();
+        LogDoctor ld=new LogDoctor();
+        ld.show();
         dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -298,6 +315,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbSpecialization;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblCreateNewDoctorAccount;
     private javax.swing.JLabel lblDoctorName;
     private javax.swing.JLabel lblEmail;

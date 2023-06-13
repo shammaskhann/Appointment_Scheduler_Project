@@ -53,7 +53,7 @@ public class PatientCUA1 extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         btnConfirmDoctor.setBackground(new java.awt.Color(0, 51, 102));
-        btnConfirmDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnConfirmDoctor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnConfirmDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnConfirmDoctor.setText("Confirm Doctor");
         btnConfirmDoctor.addActionListener(new java.awt.event.ActionListener() {

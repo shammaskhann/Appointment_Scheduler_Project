@@ -109,7 +109,7 @@ this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             }
         });
         jPanel1.add(btnBack);
-        btnBack.setBounds(60, 80, 90, 27);
+        btnBack.setBounds(60, 80, 90, 23);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/download-removebg-preview.png"))); // NOI18N
         jLabel8.setText("jLabel8");
@@ -157,6 +157,9 @@ this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         lblUserCode.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         lblUserCode.setText("Welcome,"+doctor.getDoctorName());
 
+        jButton1.setBackground(new java.awt.Color(0, 51, 102));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Delete");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

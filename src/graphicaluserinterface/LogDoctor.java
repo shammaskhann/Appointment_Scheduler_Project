@@ -75,7 +75,9 @@ public class LogDoctor extends javax.swing.JFrame {
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("PASSWORD");
 
-        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLogin.setBackground(new java.awt.Color(0, 51, 102));
+        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("Log in");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +85,9 @@ public class LogDoctor extends javax.swing.JFrame {
             }
         });
 
-        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCreateNewAccount.setBackground(new java.awt.Color(0, 51, 102));
+        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCreateNewAccount.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateNewAccount.setText("Create New Account");
         btnCreateNewAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +122,7 @@ public class LogDoctor extends javax.swing.JFrame {
                         .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(460, 460, 460)
-                        .addComponent(btnCreateNewAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnCreateNewAccount)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(

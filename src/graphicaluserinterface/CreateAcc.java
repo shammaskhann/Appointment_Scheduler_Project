@@ -41,6 +41,7 @@ public class CreateAcc extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtareaMedicalHistory = new javax.swing.JTextArea();
         btnBack = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,19 +58,19 @@ public class CreateAcc extends javax.swing.JFrame {
         lblUsername.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername.setText("Enter UserName");
         jPanel1.add(lblUsername);
-        lblUsername.setBounds(44, 136, 220, 32);
+        lblUsername.setBounds(180, 140, 220, 32);
 
         lblPatientName.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblPatientName.setForeground(new java.awt.Color(255, 255, 255));
         lblPatientName.setText("Enter Patient Name");
         jPanel1.add(lblPatientName);
-        lblPatientName.setBounds(44, 216, 260, 32);
+        lblPatientName.setBounds(180, 210, 260, 32);
 
         lblEmail.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblEmail.setForeground(new java.awt.Color(255, 255, 255));
         lblEmail.setText("Enter Email");
         jPanel1.add(lblEmail);
-        lblEmail.setBounds(44, 377, 170, 32);
+        lblEmail.setBounds(180, 390, 170, 32);
 
         lblPatientMedicalHistory.setFont(new java.awt.Font("sansserif", 3, 24)); // NOI18N
         lblPatientMedicalHistory.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,7 +106,7 @@ public class CreateAcc extends javax.swing.JFrame {
         lblContactNo.setForeground(new java.awt.Color(255, 255, 255));
         lblContactNo.setText("Enter Contact No");
         jPanel1.add(lblContactNo);
-        lblContactNo.setBounds(44, 465, 220, 32);
+        lblContactNo.setBounds(180, 470, 220, 32);
 
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +120,7 @@ public class CreateAcc extends javax.swing.JFrame {
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("Enter Password");
         jPanel1.add(lblPassword);
-        lblPassword.setBounds(44, 545, 210, 32);
+        lblPassword.setBounds(180, 540, 210, 32);
 
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +134,7 @@ public class CreateAcc extends javax.swing.JFrame {
         lblSelectGender.setForeground(new java.awt.Color(255, 255, 255));
         lblSelectGender.setText("Select Gender");
         jPanel1.add(lblSelectGender);
-        lblSelectGender.setBounds(44, 311, 200, 32);
+        lblSelectGender.setBounds(180, 310, 200, 32);
 
         cmbSelectGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Select Gender-", "Male", "Female" }));
         cmbSelectGender.addActionListener(new java.awt.event.ActionListener() {
@@ -144,8 +145,8 @@ public class CreateAcc extends javax.swing.JFrame {
         jPanel1.add(cmbSelectGender);
         cmbSelectGender.setBounds(502, 298, 302, 45);
 
-        btnCreateNewAccount.setBackground(new java.awt.Color(0, 0, 102));
-        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnCreateNewAccount.setBackground(new java.awt.Color(0, 51, 102));
+        btnCreateNewAccount.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnCreateNewAccount.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateNewAccount.setText("Create New Account");
         btnCreateNewAccount.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +155,7 @@ public class CreateAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnCreateNewAccount);
-        btnCreateNewAccount.setBounds(570, 640, 466, 45);
+        btnCreateNewAccount.setBounds(630, 690, 340, 45);
 
         txtareaMedicalHistory.setColumns(20);
         txtareaMedicalHistory.setRows(5);
@@ -171,7 +172,23 @@ public class CreateAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnBack);
-        btnBack.setBounds(20, 20, 90, 27);
+        btnBack.setBounds(20, 20, 90, 23);
+
+        jPanel2.setBackground(new java.awt.Color(0, 51, 102,100));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1090, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(220, 40, 1090, 50);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/healthcare-and-medical-background-with-cardiogram-line-free-vector_1.jpg"))); // NOI18N
         jPanel1.add(jLabel9);
@@ -293,6 +310,7 @@ public class CreateAcc extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbSelectGender;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblContactNo;
     private javax.swing.JLabel lblCreateNewPatientAccount;

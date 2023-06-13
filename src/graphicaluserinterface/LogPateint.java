@@ -34,9 +34,7 @@ public class LogPateint extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1366, 786));
         setMinimumSize(new java.awt.Dimension(1366, 786));
-        setPreferredSize(new java.awt.Dimension(1366, 786));
 
         jPanel1.setLayout(null);
 
@@ -52,7 +50,9 @@ public class LogPateint extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 51,100));
 
-        btnCreateNewAcount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCreateNewAcount.setBackground(new java.awt.Color(0, 51, 102));
+        btnCreateNewAcount.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCreateNewAcount.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateNewAcount.setText("Create New Account");
         btnCreateNewAcount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +60,9 @@ public class LogPateint extends javax.swing.JFrame {
             }
         });
 
-        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLogin.setBackground(new java.awt.Color(0, 51, 102));
+        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("Log in");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,8 +120,8 @@ public class LogPateint extends javax.swing.JFrame {
                         .addComponent(lblPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(465, 465, 465))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnCreateNewAcount, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(449, 449, 449))))
+                        .addComponent(btnCreateNewAcount)
+                        .addGap(445, 445, 445))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

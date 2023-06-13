@@ -32,7 +32,6 @@ public class Home extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1366, 786));
         setMinimumSize(new java.awt.Dimension(1366, 786));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -41,7 +40,7 @@ public class Home extends javax.swing.JFrame {
         lblAppointmentSchedular.setText("APPOINTMENT SCHEDULAR");
         getContentPane().add(lblAppointmentSchedular, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 20, 750, 110));
 
-        btnQuit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnQuit.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnQuit.setText("QUIT");
         btnQuit.setBorder(null);
         btnQuit.addActionListener(new java.awt.event.ActionListener() {
@@ -51,7 +50,7 @@ public class Home extends javax.swing.JFrame {
         });
         getContentPane().add(btnQuit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 560, 260, 60));
 
-        btnPatient.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnPatient.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnPatient.setText("PATIENT");
         btnPatient.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, java.awt.Color.black));
         btnPatient.setBorderPainted(false);
@@ -62,7 +61,7 @@ public class Home extends javax.swing.JFrame {
         });
         getContentPane().add(btnPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 560, 250, 56));
 
-        btnDoctor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnDoctor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnDoctor.setText("DOCTOR");
         btnDoctor.setBorder(null);
         btnDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +74,7 @@ public class Home extends javax.swing.JFrame {
         lblDoctor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/125-1252462_deserve-a-doctor-doctor-icon-removebg-preview-removebg-preview.png"))); // NOI18N
         getContentPane().add(lblDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, 460, 380));
 
-        lblPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/png-transparent-health-care-medicine-physician-patient-contract-research-organization-infirm-text-hospital-surgery-removebg-preview.png"))); // NOI18N
+        lblPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/png-transparent--removebg-preview.png"))); // NOI18N
         getContentPane().add(lblPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 310, 320));
 
         lblQuit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/blue-exit-icon-4-removebg-preview.png"))); // NOI18N
