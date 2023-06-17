@@ -218,11 +218,10 @@
             <Component class="javax.swing.JComboBox" name="cmbSelectGender">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
+                  <StringArray count="3">
                     <StringItem index="0" value="-Select Gender-"/>
                     <StringItem index="1" value="Male"/>
                     <StringItem index="2" value="Female"/>
-                    <StringItem index="3" value="Others"/>
                   </StringArray>
                 </Property>
               </Properties>

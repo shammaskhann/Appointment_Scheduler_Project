@@ -103,7 +103,7 @@ public final class PatientAppoinmentCancellation extends javax.swing.JFrame {
             }
         });
 
-        cmbSelectGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Select Gender-", "Male", "Female", "Others" }));
+        cmbSelectGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-Select Gender-", "Male", "Female" }));
         cmbSelectGender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbSelectGenderActionPerformed(evt);
@@ -209,7 +209,7 @@ public final class PatientAppoinmentCancellation extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnBack);
-        btnBack.setBounds(70, 30, 80, 23);
+        btnBack.setBounds(70, 30, 80, 27);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graphicaluserinterface/download-removebg-preview.png"))); // NOI18N
         jPanel1.add(jLabel9);
