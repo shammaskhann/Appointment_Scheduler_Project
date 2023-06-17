@@ -226,6 +226,9 @@ public class CreateAcc extends javax.swing.JFrame {
         if (email.isEmpty() || username.isEmpty() || password.isEmpty() || pName.isEmpty() || pContact.isEmpty() || pGender.equals("-Select Gender-")) {
         JOptionPane.showMessageDialog(null, "Please fill in all the required fields.", "Error", JOptionPane.ERROR_MESSAGE);
         }
+        else if(!email.endsWith("@gmail.com") && !email.endsWith("@hotmail.com") && !email.endsWith("@mail.com") && !email.endsWith("@yahoo.com") && !email.endsWith("@bing.com")){
+                    JOptionPane.showMessageDialog(null, "Please Enter a Valid Email Address.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
         else if (!pContact.matches("\\d{12}"))
         {
         JOptionPane.showMessageDialog(null, "Enter a Valid Number", "Error", JOptionPane.ERROR_MESSAGE);
@@ -233,12 +236,11 @@ public class CreateAcc extends javax.swing.JFrame {
         else{
              Patient patient1 = new Patient(email,username,password,pName,pGender,pContact,medHistory);
              patient1.saveUserInfo();
-             JOptionPane.showMessageDialog(null, "You Are Sucessfully Registered", "Congrats", JOptionPane.ERROR_MESSAGE);
+             JOptionPane.showMessageDialog(null, "You Are Sucessfully Registered", "Congrats", JOptionPane.INFORMATION_MESSAGE);
              LogPateint logPatient1 = new LogPateint();
              logPatient1.show();
              dispose();
         }
-        
     }//GEN-LAST:event_btnCreateNewAccountActionPerformed
 
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed

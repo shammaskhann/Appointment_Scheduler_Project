@@ -228,6 +228,9 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         else if(time==0){
         JOptionPane.showMessageDialog(null, "Please Select Time", "Error", JOptionPane.ERROR_MESSAGE);
         }
+        else if(!email.endsWith("@gmail.com") && !email.endsWith("@hotmail.com") && !email.endsWith("@mail.com") && !email.endsWith("@yahoo.com") && !email.endsWith("@bing.com")){
+                    JOptionPane.showMessageDialog(null, "Please Enter a Valid Email Address.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
         else{
              Doctor doctor1 = new Doctor(username,password,email,dName,specialization,startHour,endHour);
              doctor1.saveUserInfo();
