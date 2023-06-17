@@ -221,14 +221,13 @@
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="7">
+              <StringArray count="6">
                 <StringItem index="0" value="[-Select Time-]"/>
-                <StringItem index="1" value="12:00 pm - 2:00 pm"/>
-                <StringItem index="2" value="2:00 pm - 4:00 pm"/>
-                <StringItem index="3" value="4:00 pm - 6:00 pm"/>
-                <StringItem index="4" value="6:00 pm - 8:00 pm"/>
-                <StringItem index="5" value="8:00 pm - 10:00 pm"/>
-                <StringItem index="6" value=" "/>
+                <StringItem index="1" value="2:00 pm - 4:00 pm"/>
+                <StringItem index="2" value="4:00 pm - 6:00 pm"/>
+                <StringItem index="3" value="6:00 pm - 8:00 pm"/>
+                <StringItem index="4" value="8:00 pm - 10:00 pm"/>
+                <StringItem index="5" value=" "/>
               </StringArray>
             </Property>
           </Properties>

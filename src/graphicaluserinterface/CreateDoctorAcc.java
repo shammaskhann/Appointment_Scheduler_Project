@@ -114,7 +114,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         lblSelectTime.setBounds(240, 600, 150, 32);
 
         cmbSelectTime.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        cmbSelectTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "[-Select Time-]", "12:00 pm - 2:00 pm", "2:00 pm - 4:00 pm", "4:00 pm - 6:00 pm", "6:00 pm - 8:00 pm", "8:00 pm - 10:00 pm", " " }));
+        cmbSelectTime.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "[-Select Time-]", "2:00 pm - 4:00 pm", "4:00 pm - 6:00 pm", "6:00 pm - 8:00 pm", "8:00 pm - 10:00 pm", " " }));
         cmbSelectTime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbSelectTimeActionPerformed(evt);
@@ -157,7 +157,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnBack);
-        btnBack.setBounds(50, 30, 90, 23);
+        btnBack.setBounds(50, 30, 90, 27);
 
         jPanel2.setBackground(new java.awt.Color(0, 51, 102,100));
 
@@ -209,19 +209,16 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         int startHour=0;
         int endHour=0;
         if(time == 1){
-            startHour=12;
-            endHour=2;
-        }else if(time == 2){
             startHour=2;
             endHour=4;
         }
-        else if(time == 3){
+        else if(time == 2){
             startHour=4;
             endHour=6;
-        }else if(time == 4){
+        }else if(time == 3){
             startHour=6;
             endHour=8;
-        }else if(time == 5){
+        }else if(time == 4){
             startHour=8;
             endHour=10;
         }
@@ -234,7 +231,7 @@ public class CreateDoctorAcc extends javax.swing.JFrame {
         else{
              Doctor doctor1 = new Doctor(username,password,email,dName,specialization,startHour,endHour);
              doctor1.saveUserInfo();
-             JOptionPane.showMessageDialog(null, "You Are Sucessfully Registered", "Congrats", JOptionPane.ERROR_MESSAGE);
+             JOptionPane.showMessageDialog(null, "You Are Sucessfully Registered", "Congrats", JOptionPane.INFORMATION_MESSAGE);
              LogDoctor doctorLogin1 = new LogDoctor();
              doctorLogin1.show();
              dispose();
